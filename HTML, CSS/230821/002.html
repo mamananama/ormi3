@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+        }
+
+        .float-left .box{
+            clear: right;
+            float: left;
+        }
+        
+        .float-right .box{
+            clear: left;
+            float: right;
+        }
+
+        .float-right+p{
+            clear: right;
+        }
+        /* float 속성을 사용하면 인라인 요소들도 블록 요소로 변경시킨다. */
+
+    </style>
+</head>
+<body>
+    <div>
+        <span class="box">box</span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus, tenetur a dolorem, ratione repudiandae consequuntur voluptas modi laborum totam provident unde delectus labore eveniet obcaecati? Iste tempore rerum inventore.
+        </p>
+    </div>
+    <div class="float-left">
+        <div class="box">box</div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus, tenetur a dolorem, ratione repudiandae consequuntur voluptas modi laborum totam provident unde delectus labore eveniet obcaecati? Iste tempore rerum inventore.
+        </p>
+    </div>
+    <div class="float-right">
+        <span class="box">box</span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus, tenetur a dolorem, ratione repudiandae consequuntur voluptas modi laborum totam provident unde delectus labore eveniet obcaecati? Iste tempore rerum inventore.
+        </p>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus, tenetur a dolorem, ratione repudiandae consequuntur voluptas modi laborum totam provident unde delectus labore eveniet obcaecati? Iste tempore rerum inventore.
+    </p>
+</body>
+
+</html>

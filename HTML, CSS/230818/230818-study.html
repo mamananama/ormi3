@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>230818-study</title>
+    <link rel="stylesheet" href="./230818-study.css">
+</head>
+
+<body>
+    <h1>230818 학습내용 정리</h1>
+    <div>
+        <h2>CSS</h2>
+        <p>
+            <ul>
+                <li>CSS: <span style="font-weight: bold;">Cascading Style Sheet</span></li>
+                <li>CSS 스타일이 적용되는 우선순위가 폭포수 처럼 떨어지는 모양(Cascading) </li>
+                <li>HTML의 스타일, 레이아웃을 꾸미는 역할</li>
+                <li>CSS는 재사용성, 반복성을 가진다.</li>
+            </ul>
+        </p>
+    </div>
+    <div>
+        <h2>HTML 스타일 적용 방법론</h2>
+        <ul>
+            <li>
+                <p>
+                    <h3>인라인 방식</h3>
+                    <p>인라인 방식의 CSS는 스타일 적용 우선순위가 높으나, 코드의 가독성을 떨어뜨리는 문제를 일으킨다.</p>
+                    <p>일부 스타일 적용에 제한이 있음(예, 가상요소(:hover, ::before, ::after))</p>
+                    <p class="example">
+                        <code>
+                            &lt;p style="color: <span style="color: royalblue;">royalblue</span>;"&gt;안녕하세요 오르미 3기 여러분&lt;/p&gt; 
+        &lt;p&gt;너무 너무 반가워요&lt;/p&gt;
+                        </code>
+                    </p>
+                </p>
+            </li>
+            <li>
+                <h3>내부 스타일</h3>
+                <p>
+                    head 태그 안 style 태그를 사용하여 스타일을 적용시킬 수 있음.
+                </p>
+                <p>
+                    코드 길이를 길어지게 만들어 코드 가독성을 떨어뜨리는 문제가 발생.
+                </p>
+                <p>
+                    로딩을 빠르게 적용시켜야 하는 일부 스타일의 경우 내부 스타일을 통해 작성하는 것이 이점이 있다.
+                </p>            
+            </li>
+            <li>
+                <h3>
+                    외부 스타일
+                </h3>
+                <p>head요소의 link 태그를 통해서 외부 CSS 리소스와의 관계를 명시하여 스타일을 적용시킨다</p>
+                <p>외부 스타일로 스타일을 적용하면 생산성과 코드 가독성이 높아진다.</p>
+            </li>
+        </ul>
+        <div>
+            <h2>CSS 상속</h2>
+            <p class="example">
+                <code>
+                    &lt;div&gt;<br>
+&nbsp;&lt;h1&gt;Hello&lt;/h1&gt;<br>
+&nbsp;&lt;h2&gt;Hello&lt;/h2&gt;<br>
+&nbsp;&lt;p&gt;Hello&lt;/p&gt;<br>
+&nbsp;&lt;button&gt;Hello&lt;/button&gt;
+&lt;/div&gt;
+                </code>
+            </p>
+            <ul>
+                <li>    
+                    <h3>상속</h3>
+                    <p>
+                        상속을 통해 부모의 속성 값을 자식에게 상속시킬 수 있다.
+                    </p>
+                    <p>
+                        위의 예에서, h1, h2, p는 부모인 div의 속성을 상속받는다.
+                    </p>
+                    <p>
+                        예외적으로, button 태그는 별도의 다른 속성을 지니기 때문에 원칙적으로 상속을 받지 않는다.<br>
+                        대신, 'inherit' 속성 값을 통해 부모의 값을 상속받게 할 수 있다.
+                    </p>
+                    <p>
+                        'initial' 속성 값을 통해 브라우저 기본 스타일 속성을 따르게, 즉 상속을 받지 않게 할 수 있다.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

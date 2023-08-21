@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* initialize body, h1, h2, h3, p margine, padding */
+body, h1, h2, h3, h4, p, button, ul, ol, li{
+    margin: 0;    
+    padding: 0;
+    list-style: none;
+}
+/* ---------- RESET ---------- */
+
+body{
+    font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
+}
+
+.main-title{
+    font-size: 24px;
+}

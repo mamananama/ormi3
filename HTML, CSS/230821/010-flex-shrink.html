@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        .item{
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: skyblue;
+        }
+        .item:nth-child(odd){
+            background-color: gold;
+        }
+
+
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #ddd;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            flex-basis: 200px;
+            /* flex 속성을 통해 줄어드는 것을 막는 속성 */
+            flex-shrink: 2;
+
+            /* 단축속성 flex: 2 200px */
+        }
+
+        .item:first-child{
+            /* item 개별적으로 주는 속성 */
+            align-self: start;
+
+            /* justify-self: start; */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- flex-container -->
+    <div class="container">
+        <!-- flex-item -->
+        <!-- 첫 flex-item을 flex-basis -->
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>       
+    </div>    
+</body>
+
+</html>

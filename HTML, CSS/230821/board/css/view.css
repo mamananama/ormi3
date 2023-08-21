@@ -1,0 +1,47 @@
+.view{
+    width: 1000px;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.view-header{
+    background-color: #eee;
+    border-top: 2px solid black;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.view-info{
+    display: flex;
+    margin-top: 10px;
+}
+
+.view-info p:not(:first-child)::before{
+    content: '|';
+    color: #aaa;
+    margin: 0 20px;
+}
+
+.view-info p :first-child{
+    color: red;
+}
+
+.view-contents{
+    padding: 20px;
+}
+
+ul, ol, li{
+    list-style-type: initial;
+}
+
+.view-contents ol, .view-contents ul{
+    list-style-position: inside;
+}
+
+.view-contents h4{
+    margin-top: 30px;
+}
+
+.view-contents ol, .view-contents ul{
+    margin-bottom: 20px;
+}

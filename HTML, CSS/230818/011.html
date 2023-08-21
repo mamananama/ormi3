@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        
+        /* 모든 속성 선택 */
+        *{
+            border: 3px solid red;
+            padding: 10px;
+        }
+
+
+        /* div의 자식을 선택 */
+        div *{
+            border: 3px solid skyblue;
+            padding: 10px;
+        }
+
+        /* 태그 / 타입 선택자 */
+        h1{
+            text-decoration: underline;
+        }
+        p{
+            background-color: skyblue;
+        }
+
+        /* id 선택자(#) -- 한 번 밖에 사용할 수 없으므로 재사용 성은 떨어진다 */
+        #hello{
+            font-weight: bold;
+        }
+
+        /* class 선택자(.) ==  */
+        .hello2{
+            background-color: bisque;
+        }
+
+        /* 특성 선택자([]) */
+        [type="button"]{
+            width: 200px;
+        }
+        [class=hello2]{
+            border-color: blueviolet;
+        }
+
+        /* 그룹 선택자 -- 동시에 다양한 선택 가능*/
+        h1, #hello, .hello2{
+            border: 10px
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>test message</h1>
+    <h2>test message</h2>
+    <p>test message</p>
+    <p>test message</p>
+    <p id="hello">test message</p>
+    <p class="hello2">test message</p>
+    <p>test message</p>
+    <p class="hello2">test message</p>
+    <p class="hello2">test message</p>
+    <p>test message</p>
+    <button type="button">test message</button>
+</body>
+
+</html>

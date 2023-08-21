@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT</title>
+</head>
+
+<body>
+    <label for="lunch-menu">오늘의 메뉴</ㅣ>
+    
+    
+    <select id="lunch-menu" size="5" required>
+        <option value="lunch1">오트밀</option>
+        <optgroup label="고기">
+            <option>등갈비</option>
+            <option>갈비탕</option>
+        </optgroup>
+        <optgroup label="분식">
+            <option>라면</option>
+            <option selected>참치계란비빔밥</option>
+            <option>치킨마요</option>
+            <option>햄버거</option>
+        </optgroup>
+    </select>
+
+    <!-- input list와 datalist의 id로 연결 -->
+    <input list="numbers-list" id="numbers">
+    <datalist id="numbers-list">
+        <option value="111"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+    </datalist>
+</body>
+
+</html>

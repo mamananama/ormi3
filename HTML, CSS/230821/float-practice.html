@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float example</title>
+
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(47, 80, 170);            
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+        }
+        p{
+            text-align: center;
+            margin: 0 auto;
+        }
+        header{
+            height: 20%;
+            background-color: skyblue
+            ;
+            margin: 5px;
+        }
+        section{
+            float: left;
+            width: 60%;
+            height: 55%;
+            background-color: dodgerblue;
+            margin: 5px;
+        }
+        aside
+        {
+            float: right;
+            width: 30%;
+            height: 55%;
+            background-color: lawngreen;
+            color: black;
+            margin: 5px;
+        }
+        footer{
+            clear: both;
+            height: 20%;
+            background-color: salmon;
+            margin: 5px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p>header</p>        
+        </header>
+        <section>
+            <article>
+                <p>section>article</p>
+            </article>
+        </section>
+        <aside>
+            <p>aside</p>
+        </aside>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+/* main */
+.main-area{
+    width: 450px;
+    margin: auto;
+}
+
+
+.tac{
+    text-align: center;
+}
+
+.main-desc{
+    color: #767676;
+    margin: 10px 0 32px
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-form .flex-input{
+    display: flex;
+    align-items: center;
+}
+
+.flex-input label{
+    width: 80px;
+}
+
+.flex-input input{
+    height: 32px;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.flex-field{
+    display: flex;
+    flex-direction: row;    
+}
+
+.flex-field label{
+    display: flex;
+    align-items: start;
+    flex-shrink: 0;
+    width: 80px;
+    margin-left: 5px;
+}
+
+.flex-field ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.flex-field ul li{
+    display: flex;
+    flex-direction: row;    
+}
+
+.flex-field input:disabled + label{
+    color:#ccc;
+}
+
+.flex-field input:enabled + label{
+    cursor: pointer;
+}
+
+.flex-field input:checked + label{
+    color: royalblue;
+}
+
+.id-save{
+    font-size: 16px;
+    align-items: center;
+}
+
+.login-btn{
+    background-color: royalblue;
+    border: 0;
+    border-radius: 6px;
+    height: 42px;
+    color: white;
+    font-weight: bold;
+
+    transition: background-color 0.5s ease;
+}
+
+.login-btn:hover{
+    background-color: skyblue;    
+}
+
+.login-btn:disabled{
+    background-color: #ccc;
+}
+
+/* login page */

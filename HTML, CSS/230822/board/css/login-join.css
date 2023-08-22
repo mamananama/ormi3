@@ -1,0 +1,80 @@
+/* main */
+main{
+    width: 450px;
+    margin: auto;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-form .flex-input{
+    display: flex;
+    align-items: center;
+}
+
+.flex-input label, .flex-field label{
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.flex-input input{
+    flex-grow: 1;
+}
+
+.flex-field ul li label{
+    display: flex;
+    align-items: start;
+    flex-shrink: 0;
+    width: 80px;
+    margin-left: 5px;
+}
+
+.flex-field ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.flex-field ul li{
+    display: flex;
+    flex-direction: row;    
+}
+
+.flex-field input:disabled + label{
+    color:#ccc;
+}
+
+.flex-field input:enabled + label{
+    cursor: pointer;
+}
+
+.flex-field input:checked + label{
+    color: royalblue;
+}
+
+.id-save{
+    font-size: 16px;
+    align-items: center;
+}
+
+.login-btn{
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.login-btn:hover{
+    background-color: skyblue;    
+}
+
+.login-btn:disabled{
+    background-color: #ccc;
+}
+
+/* login page */

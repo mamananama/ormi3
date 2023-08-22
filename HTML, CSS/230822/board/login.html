@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+
+		<link rel="stylesheet" href="./css/common.css" />
+		<link rel="stylesheet" href="./css/login-join.css" />
+	</head>
+
+	<body>
+		<header class="layout-header">
+			<h1 class="main-title"><a href="index.html">HTML/CSS 실습</a></h1>
+			<div>
+				<p><a href="./chat.html">채팅</a></p>
+				<p><a href="./login.html">로그인</a></p>
+				<p><a href="./signup.html">회원가입</a></p>
+				<p>로그아웃</p>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="view">
+			<h2 class="main-title tac">로그인</h2>
+			<p class="main-desc tac">아이디와 비밀번호를 입력하고 로그인하세요</p>
+
+			<form action="" method="POST" class="main-form">
+				<div class="flex-input">
+					<label for="user-id">아이디</label>
+					<input
+						id="user-id"
+						name="user-id"
+						type="text"
+						class="input-field"
+						placeholder="아이디"
+						required
+					/>
+				</div>
+				<div class="flex-input">
+					<label for="user-pw">비밀번호</label>
+					<input
+						id="user-pw"
+						name="user-pw"
+						type="password"
+						class="input-field"
+						placeholder="비밀번호"
+						required
+					/>
+				</div>
+				<div class="id-save">
+					<input id="user-id-save" type="checkbox" />
+					<label for="user-id-save" class="checkbox-label">아이디 저장</label>
+				</div>
+				<button type="submit" class="login-btn btn">로그인</button>
+			</form>
+		</main>
+
+		<!-- footer -->
+		<footer class="layout-footer">Copyright 2023. Chilli All rights reserved.</footer>
+	</body>
+</html>

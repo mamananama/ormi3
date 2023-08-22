@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>글 쓰기</title>
+		<link rel="stylesheet" href="./css/common.css" />
+		<link rel="stylesheet" href="./css/write.css" />
+	</head>
+
+	<body>
+		<header class="layout-header">
+			<h1 class="main-title"><a href="./index.html">HTML/CSS 실습</a></h1>
+			<div>
+				<p><a href="./chat.html">채팅</a></p>
+				<p><a href="./login.html">로그인</a></p>
+				<p><a href="./signup.html">회원가입</a></p>
+				<p>로그아웃</p>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="view">
+			<div class="main-title">
+				<h2>글 쓰기</h2>
+			</div>
+			<div class="main-desc">
+				<p>내용을 입력해 주세요</p>
+			</div>
+			<form class="main-form" action="POST">
+				<table class="main-content">
+					<colgroup>
+						<col style="width: 120px" />
+					</colgroup>
+					<tr class="board-category">
+						<th><label class="category">카테고리</label></th>
+						<td>
+							<select id="category">
+								<option value="일반" selected>일반</option>
+								<option value="공지사항">공지사항</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="board-title">
+						<th><label for="board-title">제목</label></th>
+						<td>
+							<input
+								type="text"
+								name="board-title"
+								id="board-title"
+								required
+								minlength="5"
+								max="60"
+								placeholder="5자 이상 60자 이하로 제목을 입력하세요."
+							/>
+						</td>
+					</tr>
+					<tr class="board-content">
+						<th>내용</th>
+						<td>
+							<p>
+								<textarea></textarea>
+							</p>
+						</td>
+					</tr>
+					<tr class="board-upload">
+						<th>파일 첨부</th>
+						<td><button type="file" class="btn" name="file">파일 선택</button></td>
+					</tr>
+				</table>
+				<div class="btn-group">
+					<a href="./index.html" class="btn">목록</a>
+					<button type="reset" class="btn">초기화</button>
+					<button type="submit" class="btn">작성</button>
+				</div>
+			</form>
+		</main>
+
+		<!-- footer -->
+		<footer class="layout-footer">Copyright 2023. Chilli All rights reserved.</footer>
+	</body>
+</html>

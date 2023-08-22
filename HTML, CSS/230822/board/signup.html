@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>회원가입</title>
+
+		<link rel="stylesheet" href="./css/common.css" />
+		<link rel="stylesheet" href="./css/login-join.css" />
+	</head>
+
+	<body>
+		<main class="main-area">
+			<div class="main-title tac">
+				<h2> 회원가입 </h2>
+			</div>
+			<div class="main-desc tac">
+				<p> 원활한 서비스를 이용을 위해 회원가입을 해주세요 </p>
+			</div>
+
+			<form class="main-form" method="GET">
+				<div class="flex-input">
+					<label for="user-id">아이디</label>
+					<input id="user-id" class="input-field" type="text" />
+				</div>
+				<div class="flex-input">
+					<label for="user-email">이메일</label>
+					<input id="user-email" class="input-field" type="email" />
+				</div>
+				<div class="flex-input">
+					<label for="user-pw">비밀번호</label>
+					<input id="user-pw" class="input-field" type="password" />
+				</div>
+				<div class="flex-input">
+					<label for="user-nick">닉네임</label>
+					<input id="user-nick" class="input-field" type="text" />
+				</div>
+
+				<div class="flex-field">
+					<label>성별</label>
+					<ul>
+						<li>
+							<input id="gender1" name="gender" type="radio" />
+							<label for="gender1">남성</label>
+						</li>
+						<li>
+							<input id="gender2" name="gender" type="radio" />
+							<label for="gender2">여성</label>
+						</li>
+						<li>
+							<input id="gender3" name="gender" type="radio" />
+							<label for="gender3">선택 안함</label>
+						</li>
+					</ul>
+				</div>
+
+				<div class="flex-field">
+					<label>사용 기술</label>
+					<ul>
+						<li>
+							<!-- name=on -->
+							<input id="tech1" value="HTML" type="checkbox" />
+							<label for="tech1">HTML</label>
+						</li>
+						<li>
+							<input id="tech2" value="CSS" type="checkbox" />
+							<label for="tech2">CSS</label>
+						</li>
+						<li>
+							<input id="tech3" value="JavaScript" type="checkbox" />
+							<label for="tech3">JavaScript</label>
+						</li>
+						<li>
+							<input id="tech4" value="Python" type="checkbox" />
+							<label for="tech4">Python</label>
+						</li>
+						<li>
+							<input id="tech5" value="Django" type="checkbox" />
+							<label for="tech5">Django</label>
+						</li>
+						<li>
+							<input id="tech6" value="GitHub" type="checkbox" />
+							<label for="tech6">GitHub</label>
+						</li>
+						<li>
+							<input id="tech7" value="PostgreSQL" type="checkbox" />
+							<label for="tech7">PostgreSQL</label>
+						</li>
+					</ul>
+				</div>
+
+				<button type="submit" class="login-btn btn">회원가입</button>
+			</form>
+		</main>
+	</body>
+</html>

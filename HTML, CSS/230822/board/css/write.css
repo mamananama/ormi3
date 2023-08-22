@@ -1,0 +1,32 @@
+.main-form table{
+    padding: 20px;
+    border-collapse: collapse;
+    border-top: 2px solid #777;
+    margin-bottom: 20px;
+}
+
+.main-form tr{
+    border-bottom: 2px solid #ccc;    
+}
+
+.main-form th{
+    padding: 5px;
+}
+
+.main-form td{
+    width: auto;
+    padding: 5px;
+}
+
+.main-form td input{    
+    width: 100%;
+    box-sizing: border-box;
+}
+    
+.board-category, .board-title, .board-upload{
+    height: 32px;
+}
+
+.board-content{
+    height: 500px;    
+}

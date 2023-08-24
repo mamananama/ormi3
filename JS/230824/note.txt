@@ -1,0 +1,52 @@
+● == 와 === 비교
+"==": abstract equality comparison
+~~ x == y ~~
+1. x의 type과 y의 type이 같은 경우, x === y와 같은 결과를 나타낸다.
+2. x가 null, y가 undefined인 경우, true를 return한다. // null: falsy, undefined: falsy
+3. x가 undefined, y가 null인 경우, true를 return한다. 
+4. x, y중 한 쪽만 number type인 경우 나머지 반대의 항목(object type인 경우 제외)을 ToNumber()한 결과로 비교 연산을 실행한다.
+5. x, y중 한 쪽만 object type인 경우, 나머지 반대의 항목을 ToPrimitive()한 결과로 비교 연산을 실행한다.
+
+== 연산은 두 항의 type이 서로 다른 경우, 한 쪽항을 변환하여 비교를 실행한다.
+
+"===": strict equality comparison
+~~ x === y ~~
+1. x의 type과 y의 type이 서로 다른 경우, false를 return한다.
+2. x의 type이 undefined 또는 null인 경우, true를 return한다.
+3. x의 type이 number type인 경우, 
+    └ x가 NaN : false
+    └ y가 NaN : false
+    └ x와 y가 서로 같은 number value : true
+    └ x가 +0, y가 -0 : true
+    └ x가 -0, y가 +0 : true    
+4. x의 type이 string type인 경우, y의 값이 정확히 동일한 코드 단위 시퀀스(같은 길이, 코드 단위 인덱스)인 경우, true를 ㄱㄷ셔구 한다.
+5. x와 y가 정확히 일치하는 object type인 경우, true를 return한다.
+6. x와 y가 정확히 일치하는 symbol type인 경우, true를 return한다.
+// symbol type은 나중에 다시 찾아보기
+
+
+● undefined와 null 비교
+"undefined"
+변수에 값이 할당되지 않는 경우에 사용되는 값(primative value)
+undefined 값은 별도의 undefined type을 가진다.
+
+"null"
+어떠한 object의 값에 의도적으로 값이 없다는 것을 나타낼 때 사용되는 값(primative value)
+null 값은 별도의 null type을 가진다.
+
+
+● truthy, falsy 값 비교
+
+"truthy"
+1. value // number type 0 와 ''을 제외한 모든 값
+2. object
+3. !(falsy)
+4. true
+
+"falsy"
+1. null
+2. undefined
+3. 0 // number
+4. NaN
+5. ''
+6. false

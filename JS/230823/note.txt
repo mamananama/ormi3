@@ -1,0 +1,42 @@
+변수와 자료형에 관한 내용 정리
+var, let, const 비교 정리
+
+
+[변수와 자료형에 관한 내용 정리]
+변수: 
+	데이터를 보관하는 메모리 공간
+	선언, 할당, 변경을 통해 해당 데이터를 프로그램에서 이용할 수 있게 만들어주는 역할
+
+자료형: 
+	변수로 할당한 데이터를 어떤 형태로 사용하는지 식별하는 방법
+	숫자형, 문자형(character), 문자열(string), boolean, 배열, 리스트 등의 형태가 있다.
+
+[var, let, const 비교 정리]
+var: 
+	함수 외부에서 선언되는 경우, 전역 변수
+	함수 내부에서 선언되는 경우, 지역 변수
+	같은 범위 내에서 var 변수는 재선언 될 수 있다.
+ex.	var a = 1;	│	var a = 1;
+	var a = 2;	│	a = 2;
+
+** var 호이스팅 - 변수와 함수 선언이 맨 위로 이동되는 자바스크립트 매커니즘에 영향을 받음
+호이스팅 된 var 변수는 undefined로 초기화 된다.
+
+ex.	console.log(hello);			var hello;
+	var hello = "hello world";	→	console.log(hello);
+					hello = "hello world"
+
+let: 
+	{ } 블록 범위 내에서만 사용할 수 있는 변수
+	var와 다르게, 재 선언은 불가능하다
+
+** let 호이스팅 - let 변수 또한 호이스팅의 영향을 받음.
+호이스팅 된 let 변수는 var와는 다르게 초기화 되지 않는다.
+초기화 이전에 let 변수를 사용하게 되면, 참조 오류가 발생한다.
+
+const:
+	const로 선언된 변수는 상수 값을 가진다.
+	let과 비슷하게 블록 범위 내에서 접근 가능하다.
+	초기화 시에 변수 값을 설정할 수 있으며, 변경, 재선언이 불가능하다. 
+
+참고: https://www.freecodecamp.org/korean/news/var-let-constyi-caijeomeun/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+	</head>
+
+	<style></style>
+
+	<body>
+		<p>안녕하세요!!!!!!!!!!!!</p>
+
+		<!-- img에 데이터 사용하기 -->
+		<img
+			class="terran battle-cruiser"
+			src="battle-cruiser.png"
+			data-ship-id="324"
+			data-weapons="laser"
+			data-health="400"
+			data-mana="250"
+			data-skill="yamato-cannon" />
+		<script>
+			const img = document.querySelector("img");
+			console.log(img.dataset);
+			console.log(img.dataset.shipId);
+		</script>
+	</body>
+
+	<script>
+		const target = document.querySelector("p");
+		const targetColor = target.style.color;
+
+		console.log(targetColor);
+
+		target.style.color = "red";
+	</script>
+</html>

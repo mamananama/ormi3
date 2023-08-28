@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: skyblue;
+		}
+		.red {
+			background-color: dodgerblue;
+		}
+	</style>
+	<body>
+		<!-- <div></div> -->
+
+		<!-- div 클릭하면 backgroun-color 변경 이벤트 -->
+		<!-- <script>
+			const myDiv = document.querySelector("div");
+			myDiv.addEventListener("click", () => {
+				myDiv.classList.add("red");
+			});
+		</script> -->
+
+		<script>
+			const myBtn = document.querySelector("button");
+			const myUl = document.querySelector("ul");
+
+			myBtn.addEventListener("click", function () {
+				for (let i = 0; i < 5; i++) {
+					const myLi = document.createElement("li");
+					myUl.appendChild(myLi);
+				}
+			});
+		</script>
+	</body>
+</html>
